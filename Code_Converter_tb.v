@@ -16,7 +16,7 @@ initial begin
     select=2'b01;
       stimulus();
 // Performs Gray Code to Binary   
-    select=2'b01;
+    select=2'b10;
       stimulus();
 // Performs Excess-3 code to Binary      
     select=2'b11;

@@ -21,7 +21,7 @@ always@(code_in,select)
             
              //Gray Code to Binary      
              2'b10:begin
-                   code_out={code_in[3],code_in[3]^code_in[2],code_in[2]^code_in[1],code_in[1]^code_in[0]};
+                   code_out={code_in[3],code_in[3]^code_in[2],code_in[3]^code_in[2]^code_in[1],code_in[3]^code_in[2]^code_in[1]^code_in[0]};
                    end 
                    
              //Excess-3 to BCD             
@@ -34,5 +34,5 @@ always@(code_in,select)
              endcase
 
     end
-  
+    
 endmodule

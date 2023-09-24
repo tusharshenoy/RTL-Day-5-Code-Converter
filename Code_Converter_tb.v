@@ -21,6 +21,7 @@ initial begin
 // Performs Excess-3 code to Binary      
     select=2'b11;
      stimulus();
+     $finish;
 end
 
 task stimulus;
@@ -32,5 +33,3 @@ task stimulus;
             end
 endtask
 endmodule
-
-
